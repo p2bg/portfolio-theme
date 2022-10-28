@@ -674,6 +674,9 @@ blockquote p {
 .primary-navigation .menu-wrapper .menu-item {
   margin: 0.25rem 1rem;
 }
+.primary-navigation .menu-wrapper .menu-item a {
+  white-space: nowrap;
+}
 .primary-navigation .menu-wrapper .current-menu-item a {
   color: #0448A4;
   font-weight: bold;
@@ -687,7 +690,7 @@ blockquote p {
 .primary-navigation .menu-wrapper .menu-item-has-children {
   margin-top: 0;
   position: relative;
-  width: 100%;
+  width: 5rem;
 }
 .primary-navigation .menu-wrapper .menu-item-has-children > a {
   display: none;
