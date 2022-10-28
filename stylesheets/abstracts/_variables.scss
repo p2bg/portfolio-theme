@@ -9,13 +9,6 @@ $text-font-stack: 'Roboto Condensed',
 'Helvetica',
 'Arial',
 sans-serif !default;
-/// Code (monospace) font family
-/// @type List
-$code-font-stack: 'Courier New',
-'DejaVu Sans Mono',
-'Bitstream Vera Sans Mono',
-'Monaco',
-monospace !default;
 /// Copy text color
 /// @type Color
 $text-color: #333 !default;
@@ -49,6 +42,9 @@ $yellow: #F2C94C !default;
 $red: #F1B1B1 !default;
 /// Container's maximum width
 /// @type Length
+/// Backgroung Gradient
+$bkg-gradient: linear-gradient(43deg, #e9e9e9 0%, #cbf2fd 46%, #f8efff 100%);
+
 $max-width: 1280px !default;
 /// Breakpoints map
 /// @prop {String} keys - Keys are identifiers mapped to a given length

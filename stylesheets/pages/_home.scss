@@ -2,7 +2,59 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 .site {
-    background-color: $brand-light-color;
+    background: rgb(235, 243, 255);
+    background-repeat: no-repeat, no-repeat;
+    background-blend-mode: multiply, normal;
+    padding-bottom: 15rem;
+
+&.bk-1 {
+    background-image: url(assets/imgs/cat.svg), $bkg-gradient;
+    background-position: calc(80vw - 8rem) bottom, 0;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        background-position: calc(100vw - 8rem) bottom, 0;
+    }
+
+    background-size: 4rem,
+    auto,
+    32rem;
+}
+
+&.bk-2 {
+    background-image: url(assets/imgs/dog.svg), $bkg-gradient;
+    background-position: calc(80vw - 12rem) bottom, 0;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        background-position: calc(100vw - 12rem) bottom, 0;
+    }
+
+    background-size: 12rem,
+    auto,
+    32rem;
+}
+
+&.bk-3 {
+    background-image: url(assets/imgs/park.svg), $bkg-gradient;
+    background-size: 13rem, auto, 32rem;
+    background-position: calc(80vw - 15rem) bottom, 0;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        background-position: calc(100vw - 15rem) bottom, 0;
+    }
+}
+
+&.bk-4 {
+    background-image: url(assets/imgs/cat.svg), $bkg-gradient;
+    background-position: calc(80vw - 8rem) bottom, 0;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        background-position: calc(100vw - 8rem) bottom, 0;
+    }
+
+    background-size: 4rem,
+    auto,
+    32rem;
+}
 }
 
 .site-main {
@@ -11,6 +63,7 @@
     gap: 1rem;
     margin: auto;
     max-width: 1280px;
+    padding: 0 1.5rem;
     @media (max-width: map-get($breakpoints, medium)) {
         grid-template-columns: repeat(auto-fill, 100%);
     }

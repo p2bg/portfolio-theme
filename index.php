@@ -24,4 +24,7 @@ if ( have_posts() ) {
 
 } ?>
 </main><!-- #main -->
+</div><!-- #primary -->
+</div><!-- #content -->
+</div><!-- #page -->
 <?php get_footer(); ?>

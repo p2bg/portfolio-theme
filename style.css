@@ -612,6 +612,7 @@ blockquote p {
   margin: auto;
   margin-bottom: 1rem;
   max-width: 1280px;
+  padding: 0 1.5rem;
 }
 .site-header h1 {
   margin: 1.15rem 0;
@@ -804,53 +805,6 @@ blockquote p {
   }
   .primary-navigation [aria-expanded=true] .cls-3 {
     transform: rotate(45deg) scaleX(1.11);
-  }
-}
-
-.site {
-  background: rgb(235, 243, 255);
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  background-blend-mode: multiply, normal, multiply;
-  padding-bottom: 15rem;
-}
-.site.bk-1 {
-  background-image: url(assets/imgs/cat.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgb(235, 243, 255) 92%), url(assets/imgs/brick-wall.jpg);
-  background-position: calc(80vw - 8rem) bottom, 0, top center;
-  background-size: 4rem, auto, 32rem;
-}
-@media (max-width: 768px) {
-  .site.bk-1 {
-    background-position: calc(100vw - 8rem) bottom, 0, top center;
-  }
-}
-.site.bk-2 {
-  background-image: url(assets/imgs/dog.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgb(235, 243, 255) 92%), url(assets/imgs/brick-wall.jpg);
-  background-position: calc(80vw - 12rem) bottom, 0, top center;
-  background-size: 12rem, auto, 32rem;
-}
-@media (max-width: 768px) {
-  .site.bk-2 {
-    background-position: calc(100vw - 12rem) bottom, 0, top center;
-  }
-}
-.site.bk-3 {
-  background-image: url(assets/imgs/park.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgb(235, 243, 255) 92%), url(assets/imgs/brick-wall.jpg);
-  background-size: 13rem, auto, 32rem;
-  background-position: calc(80vw - 15rem) bottom, 0, top center;
-}
-@media (max-width: 768px) {
-  .site.bk-3 {
-    background-position: calc(100vw - 15rem) bottom, 0, top center;
-  }
-}
-.site.bk-4 {
-  background-image: url(assets/imgs/cat.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgb(235, 243, 255) 92%), url(assets/imgs/brick-wall.jpg);
-  background-position: calc(80vw - 8rem) bottom, 0, top center;
-  background-size: 4rem, auto, 32rem;
-}
-@media (max-width: 768px) {
-  .site.bk-4 {
-    background-position: calc(100vw - 8rem) bottom, 0, top center;
   }
 }
 
@@ -1053,7 +1007,50 @@ blockquote p {
 }
 
 .site {
-  background-color: #EBF3FF;
+  background: rgb(235, 243, 255);
+  background-repeat: no-repeat, no-repeat;
+  background-blend-mode: multiply, normal;
+  padding-bottom: 15rem;
+}
+.site.bk-1 {
+  background-image: url(assets/imgs/cat.svg), linear-gradient(43deg, #e9e9e9 0%, #cbf2fd 46%, #f8efff 100%);
+  background-position: calc(80vw - 8rem) bottom, 0;
+  background-size: 4rem, auto, 32rem;
+}
+@media (max-width: 768px) {
+  .site.bk-1 {
+    background-position: calc(100vw - 8rem) bottom, 0;
+  }
+}
+.site.bk-2 {
+  background-image: url(assets/imgs/dog.svg), linear-gradient(43deg, #e9e9e9 0%, #cbf2fd 46%, #f8efff 100%);
+  background-position: calc(80vw - 12rem) bottom, 0;
+  background-size: 12rem, auto, 32rem;
+}
+@media (max-width: 768px) {
+  .site.bk-2 {
+    background-position: calc(100vw - 12rem) bottom, 0;
+  }
+}
+.site.bk-3 {
+  background-image: url(assets/imgs/park.svg), linear-gradient(43deg, #e9e9e9 0%, #cbf2fd 46%, #f8efff 100%);
+  background-size: 13rem, auto, 32rem;
+  background-position: calc(80vw - 15rem) bottom, 0;
+}
+@media (max-width: 768px) {
+  .site.bk-3 {
+    background-position: calc(100vw - 15rem) bottom, 0;
+  }
+}
+.site.bk-4 {
+  background-image: url(assets/imgs/cat.svg), linear-gradient(43deg, #e9e9e9 0%, #cbf2fd 46%, #f8efff 100%);
+  background-position: calc(80vw - 8rem) bottom, 0;
+  background-size: 4rem, auto, 32rem;
+}
+@media (max-width: 768px) {
+  .site.bk-4 {
+    background-position: calc(100vw - 8rem) bottom, 0;
+  }
 }
 
 .site-main {
@@ -1062,6 +1059,7 @@ blockquote p {
   gap: 1rem;
   margin: auto;
   max-width: 1280px;
+  padding: 0 1.5rem;
 }
 @media (max-width: 768px) {
   .site-main {

@@ -11,5 +11,8 @@ while ( have_posts() ) :
 
 	get_template_part( 'templates/content/content' );
 endwhile; // End of the loop.
-
-get_footer();
+?>
+</div><!-- #primary -->
+</div><!-- #content -->
+</div><!-- #page -->
+<?php get_footer(); ?>
