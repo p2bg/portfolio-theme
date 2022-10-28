@@ -1,0 +1,127 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to components.
+// -----------------------------------------------------------------------------
+.entry-header {
+    font-size: $big-normal-size;
+    font-weight: bold;
+    text-transform: uppercase;
+    .entry-title {
+        line-height: 1;
+        margin: 0;
+    }
+}
+
+.card-main {
+    column-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: span 2;
+    order: 1;
+    padding: 1rem 1rem 0 1rem;
+    z-index: 1;
+    .post-thumbnail {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        margin: 0 1rem;
+        z-index: 1;
+    }
+    .card-content {
+        padding: 2rem 1rem;
+        align-self: center;
+        grid-column: 2;
+        grid-row: 1;
+        z-index: 1;
+    }
+    .entry-header {
+        font-size: $big-size;
+        .entry-title {
+            line-height: 1;
+            margin: 0 0 1rem 0;
+        }
+    }
+    &::after {
+        border-radius: 0.25rem;
+        background-color: #fff;
+        box-shadow: var(--shadow-elevation-medium);
+        content: " ";
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        width: 100%;
+        height: calc(100% - 2rem);
+        margin: 1rem 0 0 0;
+    }
+    @media (max-width: map-get($breakpoints, medium)) {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        grid-column: 1;
+        grid-template-columns: 100%;
+        .card-content {
+            padding: 1rem;
+        }
+        &::after {
+            grid-column: 1;
+            grid-row: 1 / span 2;
+            height: 100%;
+        }
+        .post-thumbnail {
+            align-self: start;
+            grid-column: 1;
+            grid-row: 1;
+            justify-self: center;
+            max-width: 450px;
+        }
+        .card-content {
+            align-self: start;
+            grid-column: 1;
+            grid-row: 2;
+            z-index: 1;
+        }
+    }
+}
+
+.card-main,
+.card-secondary {
+    .entry-content {
+        p {
+            margin: 0 0 1.5rem 0;
+        }
+        a {
+            text-transform: uppercase;
+            &:after {
+                vertical-align: middle;
+                background: url(assets/imgs/seta.svg) 0 -1px no-repeat;
+                content: " ";
+                display: inline-block;
+                height: 1rem;
+                margin-left: 0.5rem;
+                width: 1rem;
+            }
+        }
+    }
+}
+
+.card-secondary {
+    background-color: #fff;
+    border-radius: 0.25rem;
+    box-shadow: var(--shadow-elevation-medium);
+    margin: 1rem;
+    order: 1;
+    .post-thumbnail {
+        border-radius: 0.25rem 0.25rem 0 0;
+        margin: 0;
+        img {
+            border-radius: 0.25rem 0.25rem 0 0;
+        }
+    }
+    .card-content {
+        padding: 1rem;
+    }
+}
+
+.site-info {
+    padding: 0 1rem;
+    background-color: $text-color;
+    color: $light-grey;
+    text-align: center;
+}

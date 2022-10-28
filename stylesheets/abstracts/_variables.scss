@@ -1,0 +1,73 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+/// Regular font family
+/// @type List
+$text-font-stack: 'Roboto Condensed',
+'Helvetica Neue Light',
+'Helvetica Neue',
+'Helvetica',
+'Arial',
+sans-serif !default;
+/// Code (monospace) font family
+/// @type List
+$code-font-stack: 'Courier New',
+'DejaVu Sans Mono',
+'Bitstream Vera Sans Mono',
+'Monaco',
+monospace !default;
+/// Copy text color
+/// @type Color
+$text-color: #333 !default;
+/// Link color Dark mode
+/// @type Color
+$link-color-dark: #66CCFF !default;
+/// Brand color light
+/// @type Color
+$brand-light-color: #EBF3FF!default;
+/// Main brand color
+/// @type Color
+$brand-color: #0448A4!default;
+///Brand Color Dark
+/// @type Color
+$brand-dark-color: #054DAD!default;
+/// Light grey
+/// @type Color
+$light-grey: #e0e0e0 !default;
+/// Medium grey
+/// @type Color
+$mid-grey: #828282 !default;
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+/// Yellow
+/// @type Color
+$yellow: #F2C94C !default;
+/// Container's maximum width
+/// Red
+/// @type Color
+$red: #F1B1B1 !default;
+/// Container's maximum width
+/// @type Length
+$max-width: 1280px !default;
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: ( 'small': 320px, 'medium': 768px, 'large': 1024px, ) !default;
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'https://cdn.example.com/assets/';
+$base-url: '/assets/' !default;
+/// Font Sizes
+$small-size: 75%;
+$big-normal-size: 125%;
+$medium-size: 150%;
+$big-size: 200%;
+$very-big-size: 300%;
+:root {
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-low: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.1), 0.4px 0.8px 1px -1.2px hsl(var(--shadow-color) / 0.1), 1px 1.9px 2.4px -2.5px hsl(var(--shadow-color) / 0.1);
+    --shadow-elevation-medium: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.11), 0.9px 1.6px 2.1px -0.8px hsl(var(--shadow-color) / 0.11), 2.1px 3.9px 5px -1.7px hsl(var(--shadow-color) / 0.11), 5.2px 9.5px 12.2px -2.5px hsl(var(--shadow-color) / 0.11);
+    --shadow-elevation-high: 0.3px 0.5px 0.7px hsl(var(--shadow-color) / 0.1), 1.5px 2.8px 3.6px -0.4px hsl(var(--shadow-color) / 0.1), 2.8px 5.2px 6.6px -0.7px hsl(var(--shadow-color) / 0.1), 4.7px 8.5px 10.9px -1.1px hsl(var(--shadow-color) / 0.1), 7.5px 13.6px 17.5px -1.4px hsl(var(--shadow-color) / 0.1), 11.7px 21.3px 27.3px -1.8px hsl(var(--shadow-color) / 0.1), 17.8px 32.3px 41.5px -2.1px hsl(var(--shadow-color) / 0.1), 26.2px 47.6px 61.1px -2.5px hsl(var(--shadow-color) / 0.1);
+}

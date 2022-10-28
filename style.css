@@ -485,10 +485,6 @@ body {
   margin-bottom: 0 !important;
 }
 
-.mb-6 {
-  margin-bottom: 6rem !important;
-}
-
 .ml-1 {
   margin-left: 1rem;
 }
@@ -811,57 +807,53 @@ blockquote p {
   }
 }
 
-.site-footer {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-}
-.site-footer-space {
+.site {
   background: rgb(235, 243, 255);
   background-repeat: no-repeat, no-repeat, repeat-x;
   background-blend-mode: multiply, normal, multiply;
-  height: 15rem;
+  padding-bottom: 15rem;
 }
-.site-footer-space.bk-1 {
+.site.bk-1 {
   background-image: url(assets/imgs/cat.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgb(235, 243, 255) 92%), url(assets/imgs/brick-wall.jpg);
   background-position: calc(80vw - 8rem) bottom, 0, top center;
   background-size: 4rem, auto, 32rem;
 }
 @media (max-width: 768px) {
-  .site-footer-space.bk-1 {
+  .site.bk-1 {
     background-position: calc(100vw - 8rem) bottom, 0, top center;
   }
 }
-.site-footer-space.bk-2 {
+.site.bk-2 {
   background-image: url(assets/imgs/dog.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgb(235, 243, 255) 92%), url(assets/imgs/brick-wall.jpg);
   background-position: calc(80vw - 12rem) bottom, 0, top center;
   background-size: 12rem, auto, 32rem;
 }
 @media (max-width: 768px) {
-  .site-footer-space.bk-2 {
+  .site.bk-2 {
     background-position: calc(100vw - 12rem) bottom, 0, top center;
   }
 }
-.site-footer-space.bk-3 {
+.site.bk-3 {
   background-image: url(assets/imgs/park.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgb(235, 243, 255) 92%), url(assets/imgs/brick-wall.jpg);
   background-size: 13rem, auto, 32rem;
   background-position: calc(80vw - 15rem) bottom, 0, top center;
 }
 @media (max-width: 768px) {
-  .site-footer-space.bk-3 {
+  .site.bk-3 {
     background-position: calc(100vw - 15rem) bottom, 0, top center;
   }
 }
-.site-footer-space.bk-4 {
+.site.bk-4 {
   background-image: url(assets/imgs/cat.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgb(235, 243, 255) 92%), url(assets/imgs/brick-wall.jpg);
   background-position: calc(80vw - 8rem) bottom, 0, top center;
   background-size: 4rem, auto, 32rem;
 }
 @media (max-width: 768px) {
-  .site-footer-space.bk-4 {
+  .site.bk-4 {
     background-position: calc(100vw - 8rem) bottom, 0, top center;
   }
 }
+
 .site-footer-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -932,7 +924,6 @@ blockquote p {
   background: url(assets/imgs/seta-top.svg) left center no-repeat;
   background-size: 1rem;
   margin-right: 1rem;
-  white-space: nowrap;
 }
 
 .entry-header {
@@ -1183,11 +1174,6 @@ blockquote p {
   margin: 0.5rem 0 0 0;
   font-style: italic;
 }
-.chapter-content .of-hidden {
-  max-height: 21rem;
-  overflow-y: hidden;
-  margin-bottom: 0;
-}
 .chapter-content .mb-2 {
   margin-bottom: 2rem;
 }
@@ -1348,9 +1334,9 @@ BACKGROUND COLORS
 .ps-ifpr.order-7,
 .ps-ifpr.order-14,
 .nespresso-page.order-3,
-.nespresso-page.order-11,
-.nespresso-page.order-15,
-.nespresso-page.order-8 {
+.nespresso-page.order-10,
+.nespresso-page.order-13,
+.nespresso-page.order-7 {
   background-color: #333;
   color: #e0e0e0;
 }
@@ -1359,9 +1345,9 @@ BACKGROUND COLORS
 .ps-ifpr.order-7 a,
 .ps-ifpr.order-14 a,
 .nespresso-page.order-3 a,
-.nespresso-page.order-11 a,
-.nespresso-page.order-15 a,
-.nespresso-page.order-8 a {
+.nespresso-page.order-10 a,
+.nespresso-page.order-13 a,
+.nespresso-page.order-7 a {
   color: #66CCFF;
 }
 
@@ -1370,33 +1356,25 @@ BACKGROUND COLORS
 .ps-ifpr.order-4,
 .ps-ifpr.order-8,
 .ps-ifpr.order-9,
-.ps-ifpr.order-11,
 .ps-ifpr.order-12,
 .nespresso-page.order-1,
 .nespresso-page.order-4,
-.nespresso-page.order-12,
-.nespresso-page.order-13,
-.nespresso-page.order-16,
-.nespresso-page.order-9 {
+.nespresso-page.order-11,
+.nespresso-page.order-14,
+.nespresso-page.order-8 {
   background-color: #fff;
 }
 
 /* NESPRESSO RED BACKGROUND */
 .nespresso-page.order-2,
 .nespresso-page.order-5,
-.nespresso-page.order-6,
-.nespresso-page.order-7,
-.nespresso-page.order-10,
-.nespresso-page.order-13,
-.nespresso-page.order-17,
-.nespresso-page.order-14 {
+.nespresso-page.order-9,
+.nespresso-page.order-12,
+.nespresso-page.order-6 {
   background-color: #F1B1B1;
 }
 
-/* NESPRESSO YELLOW BACKGROUND */
-.ps-ifpr.order-2,
-.ps-ifpr.order-10,
-.ps-ifpr.order-13 {
+.part-four {
   background: #F2C94C;
 }
 
@@ -1475,6 +1453,11 @@ BACKGROUND COLORS
 
 .light-border {
   border: #e0e0e0 solid 1px;
+}
+
+.hidden {
+  max-height: 21rem;
+  overflow-y: hidden;
 }
 
 .list-2-col {

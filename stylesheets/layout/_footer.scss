@@ -1,0 +1,146 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.site {
+    background: rgb(235, 243, 255);
+    background-repeat: no-repeat, no-repeat, repeat-x;
+    background-blend-mode: multiply, normal, multiply;
+    padding-bottom: 15rem;
+
+&.bk-1 {
+    background-image: url(assets/imgs/cat.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgba(235, 243, 255, 1) 92%), url(assets/imgs/brick-wall.jpg);
+    background-position: calc(80vw - 8rem) bottom, 0, top center;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        background-position: calc(100vw - 8rem) bottom, 0, top center;
+    }
+
+    background-size: 4rem,
+    auto,
+    32rem;
+}
+
+&.bk-2 {
+    background-image: url(assets/imgs/dog.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgba(235, 243, 255, 1) 92%), url(assets/imgs/brick-wall.jpg);
+    background-position: calc(80vw - 12rem) bottom, 0, top center;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        background-position: calc(100vw - 12rem) bottom, 0, top center;
+    }
+
+    background-size: 12rem,
+    auto,
+    32rem;
+}
+
+&.bk-3 {
+    background-image: url(assets/imgs/park.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgba(235, 243, 255, 1) 92%), url(assets/imgs/brick-wall.jpg);
+    background-size: 13rem, auto, 32rem;
+    background-position: calc(80vw - 15rem) bottom, 0, top center;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        background-position: calc(100vw - 15rem) bottom, 0, top center;
+    }
+}
+
+&.bk-4 {
+    background-image: url(assets/imgs/cat.svg), linear-gradient(0deg, rgba(235, 243, 255, 0) 0%, rgba(235, 243, 255, 1) 92%), url(assets/imgs/brick-wall.jpg);
+    background-position: calc(80vw - 8rem) bottom, 0, top center;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        background-position: calc(100vw - 8rem) bottom, 0, top center;
+    }
+
+    background-size: 4rem,
+    auto,
+    32rem;
+}
+}
+
+.site-footer{
+
+&-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0 1rem;
+    max-width: 1280px;
+}
+
+.footer-links {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem auto;
+    padding: 0;
+    max-width: 1280px;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        width: 100%;
+        justify-content: center;
+    }
+
+    width: 50%;
+
+    a {
+        color: $text-color;
+        display: block;
+        padding-left: 1.5rem;
+    }
+
+    .linkedin {
+        background: url(assets/imgs/icon-linkedin.svg) left no-repeat;
+        background-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .email {
+        background: url(assets/imgs/icon-envelope.svg) left center no-repeat;
+        background-size: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.site-info {
+    a {
+        color: $link-color-dark;
+    }
+}
+
+.powered-by {
+    font-size: 0.75rem;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-footer {
+    padding: 1rem;
+
+    a {
+        padding: 0 1rem;
+    }
+
+    li:last-child {
+        padding-left: 1rem;
+
+        a {
+            padding: 0 1rem 0 1.5rem;
+        }
+    }
+
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+
+    @media (max-width: map-get($breakpoints, medium)) {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .to-top>a {
+        background: url(assets/imgs/seta-top.svg) left center no-repeat;
+        background-size: 1rem;
+        margin-right: 1rem;
+    }
+}
+}

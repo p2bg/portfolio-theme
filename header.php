@@ -15,7 +15,7 @@
 
 <body <?php body_class(); ?>>
 <?php wp_body_open(); ?>
-<div id="page" class="site">
+<div id="page" class="site bk-<?php echo (rand(1, 4)); ?>">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'p2bg-theme' ); ?></a>
 
 	<?php get_template_part( 'templates/header/site-header' ); ?>

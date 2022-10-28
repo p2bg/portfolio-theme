@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.site {
+    background-color: $brand-light-color;
+}
+
+.site-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(496px, 1fr));
+    gap: 1rem;
+    margin: auto;
+    max-width: 1280px;
+    @media (max-width: map-get($breakpoints, medium)) {
+        grid-template-columns: repeat(auto-fill, 100%);
+    }
+}

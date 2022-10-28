@@ -1,0 +1,120 @@
+/**
+ * Basic typography style for copy text
+ */
+
+body {
+    color: $text-color;
+    font: normal 100% / 1.5 $text-font-stack;
+}
+
+.site-description,
+.primary-navigation {
+    font: normal $medium-size $text-font-stack;
+    line-height: 1.25;
+    a {
+        color: $text-color;
+    }
+    @media (max-width: map-get($breakpoints, medium)) {
+        a {
+            color: $light-grey
+        }
+    }
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mt-0 {
+    margin-top: 0 !important;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem !important;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem !important;
+}
+
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.ml-2 {
+    margin-left: 2rem;
+}
+
+.mr-1 {
+    margin-right: 1rem;
+}
+
+.mr-2 {
+    margin-right: 2rem;
+}
+
+.text-light {
+    color: $light-grey;
+}
+
+.mr-sm-0 {
+    @media (max-width: map-get($breakpoints, medium)) {
+        margin-right: 0;
+    }
+}
+
+.ml-sm-0 {
+    @media (max-width: map-get($breakpoints, medium)) {
+        margin-left: 0;
+    }
+}
+
+.mt-sm-0 {
+    @media (max-width: map-get($breakpoints, medium)) {
+        margin-top: 0 !important;
+    }
+}
+
+.mt-sm-1 {
+    @media (max-width: map-get($breakpoints, medium)) {
+        margin-top: 1rem !important;
+    }
+}
+
+.mt-sm-2 {
+    @media (max-width: map-get($breakpoints, medium)) {
+        margin-top: 2rem !important;
+    }
+}
+
+.mt-sm-3 {
+    @media (max-width: map-get($breakpoints, medium)) {
+        margin-top: 3rem !important;
+    }
+}
+
+.mb-sm-1 {
+    @media (max-width: map-get($breakpoints, medium)) {
+        margin-top: 1rem !important;
+    }
+}
+
+blockquote {
+    max-width: 70ch;
+    font-size: 1.25rem;
+    p {
+        margin: 0;
+    }
+}

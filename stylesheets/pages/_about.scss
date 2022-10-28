@@ -1,0 +1,70 @@
+.about {
+    max-width: calc(1280px - 2rem);
+    margin: 1rem auto;
+    padding: 2rem;
+    h1 {
+        display: none;
+    }
+    .entry-content {
+        max-width: 70ch;
+        margin: auto;
+    }
+    .span-2-col {
+        grid-column: 1 / span 2;
+    }
+    .greeting {
+        img {
+            width: 10rem;
+        }
+    }
+    .about-top {
+        .wp-block-group__inner-container {
+            display: flex;
+            align-items: center;
+        }
+    }
+    .about-links {
+        &>.wp-block-group__inner-container {
+            display: flex;
+            gap: 2rem;
+            &>div {
+                flex: 0 1 50%;
+            }
+        }
+        a {
+            display: block;
+            padding-left: 1.5rem;
+        }
+        .linkedin {
+            background: url(assets/imgs/icon-linkedin-dark.svg) left no-repeat;
+            background-size: 1rem;
+        }
+        .email {
+            background: url(assets/imgs/icon-envelope-dark.svg) left center no-repeat;
+            background-size: 1rem;
+        }
+        .resume {
+            background: url(assets/imgs/icon-cv.svg) left no-repeat;
+            background-size: 1rem;
+        }
+        .dribbble {
+            background: url(assets/imgs/icon-dribbble.svg) left center no-repeat;
+            background-size: 1rem;
+        }
+    }
+    .portrait {
+        align-self: start;
+        background-color: $light-grey;
+        border: 0.75rem solid $light-grey;
+        border-radius: 0.5rem;
+        box-shadow: var(--shadow-elevation-medium);
+        margin: 1rem auto;
+        width: 50%;
+        img {
+            border-radius: 0.25rem;
+            max-height: 275px;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+}

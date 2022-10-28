@@ -7,11 +7,7 @@
  */
 
 ?>
-</div><!-- #primary -->
-</div><!-- #content -->
 <footer class="site-footer">
-	<div class="site-footer-space bk-<?php echo (rand(1, 4)); ?>">
-	</div>
 	<div class="site-info">
 		<div class="site-footer-wrapper">
 			<div class="footer-links">
@@ -44,10 +40,7 @@
 		</div>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
-</div><!-- #page -->
-
 <?php wp_footer(); ?>
-
 </body>
 
 </html>

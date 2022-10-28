@@ -1,0 +1,200 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.site-header {
+    h1 {
+        margin: 1.15rem 0;
+    }
+    display: flex;
+    margin: auto;
+    margin-bottom: 1rem;
+    max-width: 1280px;
+    .site-logo {
+        margin: 0 1rem;
+        .custom-logo-link {
+            display: block;
+        }
+    }
+    .site-branding {
+        align-items: baseline;
+        display: flex;
+        flex-grow: 1;
+        @media (max-width: map-get($breakpoints, medium)) {
+            flex-direction: column;
+        }
+        .site-description {
+            display: flex;
+            &::before {
+                content: "-";
+                display: block;
+                padding: 0 0.5rem;
+            }
+            @media (max-width: map-get($breakpoints, medium)) {
+                line-height: 1;
+                font-size: 1.25rem;
+                margin: 0;
+                &::before {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media (max-width: map-get($breakpoints, medium)) {
+        h1 {
+            margin: 0.75rem 0 0 0;
+            line-height: 1;
+            font-size: $medium-size;
+        }
+        margin-bottom: 0;
+    }
+}
+
+.primary-navigation {
+    .menu-wrapper {
+        display: flex;
+        align-items: flex-start;
+        margin: calc(1.85rem - 2px) 0;
+        margin-right: 1rem;
+        justify-content: space-around;
+        min-width: 318px;
+        padding: 0 1rem 0 0;
+        .menu-item {
+            margin: 0.25rem 1rem;
+        }
+        .current-menu-item a {
+            color: $brand-color;
+            font-weight: bold;
+            text-decoration: underline;
+            @media (max-width: map-get($breakpoints, medium)) {
+                color: $link-color-dark;
+            }
+        }
+        .menu-item-has-children {
+            margin-top: 0;
+            position: relative;
+            width: 100%;
+            &>a {
+                display: none;
+            }
+            .sub-menu {
+                background-color: #fff;
+                border-radius: 1.25rem;
+                display: block;
+                padding: 0;
+                position: absolute;
+                z-index: 10;
+                li {
+                    margin: 0;
+                    a {
+                        display: none;
+                        margin: 0;
+                        padding: 0.25rem 0.25rem 0.25rem 2rem;
+                        text-decoration: none;
+                        color: $text-color;
+                        font-weight: normal;
+                    }
+                    &:first-of-type a {
+                        align-items: center;
+                        background: url(assets/imgs/earth-americas-solid.svg) 0.5rem center no-repeat;
+                        background-color: #fff;
+                        background-size: 1.25rem;
+                        border-radius: 1.25rem;
+                        display: flex;
+                        padding: 0.25rem 0 0.25rem 2.25rem;
+                        cursor: pointer;
+                        &:after {
+                            background: url(assets/imgs/angle-down-solid.svg) center no-repeat;
+                            content: '';
+                            display: block;
+                            margin: 0 0.5rem 0 0.25rem;
+                            height: 1rem;
+                            transition: transform 0.2s ease-out;
+                            width: 1rem;
+                        }
+                    }
+                }
+                &.active {
+                    box-shadow: var(--shadow-elevation-medium);
+                    a {
+                        display: block;
+                        &:after {
+                            transform: rotate(-180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    button {
+        margin: 1rem;
+        display: none;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    @media (max-width: map-get($breakpoints, medium)) {
+        button {
+            display: block;
+            z-index: 3;
+            svg {
+                .cls-1,
+                .cls-2,
+                .cls-3 {
+                    transition: .2s ease;
+                    fill: $text-color;
+                }
+                .cls-2 {
+                    transform-origin: 2px 22px;
+                }
+                .cls-3 {
+                    transform-origin: 7px 9px;
+                }
+            }
+        }
+        .menu-wrapper {
+            align-items: flex-end;
+            background-color: $text-color;
+            box-shadow: var(--shadow-elevation-medium);
+            border-radius: 0 0 0.25rem 0.25rem;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin: 0;
+            padding: 4rem 1rem 6rem 1rem;
+            position: fixed;
+            transform: translate3d(0vw, 0, 0);
+            transition: transform .2s ease;
+            top: 0;
+            right: 0;
+            z-index: 2;
+            width: 100vw;
+            .menu-item {
+                margin: 1rem 0;
+            }
+            .menu-item-has-children {
+                width: 100px;
+            }
+            .sub-menu {
+                margin-top: 1rem;
+            }
+        }
+        [aria-expanded="false"]+ul {
+            transform: translate3d(0, -21rem, 0);
+        }
+        [aria-expanded="true"] {
+            .cls-1,
+            .cls-2,
+            .cls-3 {
+                fill: $light-grey;
+            }
+            .cls-1 {
+                fill: transparent;
+            }
+            .cls-2 {
+                transform: rotate(-45deg) scaleX(1.11);
+            }
+            .cls-3 {
+                transform: rotate(45deg) scaleX(1.11);
+            }
+        }
+    }
+}
