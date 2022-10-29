@@ -654,6 +654,7 @@ blockquote p {
 @media (max-width: 768px) {
   .site-header {
     margin-bottom: 0;
+    padding: 0;
   }
   .site-header h1 {
     margin: 0.75rem 0 0 0;
@@ -1066,6 +1067,7 @@ blockquote p {
 }
 @media (max-width: 768px) {
   .site-main {
+    padding: 0;
     grid-template-columns: repeat(auto-fill, 100%);
   }
 }
