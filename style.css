@@ -1488,6 +1488,11 @@ BACKGROUND COLORS
   width: 100%;
 }
 
+.of-hidden {
+  height: 25rem;
+  overflow-y: hidden;
+}
+
 .about {
   max-width: calc(1280px - 2rem);
   margin: 1rem auto;
