@@ -250,7 +250,7 @@ BACKGROUND COLORS
     }
 }
 
-.part-one-site-map {
+.ps-ifpr.order-5 {
     background: rgb(242, 201, 76);
     background: url(/wp-content/uploads/2022/10/site-map.png), linear-gradient(80deg, rgba(242, 201, 76, 1) 50%, rgba(242, 242, 242, 1) 50%);
     background-position: 50vw, center;
@@ -319,8 +319,7 @@ BACKGROUND COLORS
 
 .ps-ifpr.order-2,
 .ps-ifpr.order-10,
-.ps-ifpr.order-13,
-.ps-ifpr.order-5{
+.ps-ifpr.order-13{
     background: $yellow;
 }
 

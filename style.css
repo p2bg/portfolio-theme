@@ -1312,7 +1312,7 @@ BACKGROUND COLORS
   }
 }
 
-.part-one-site-map {
+.ps-ifpr.order-5 {
   background: rgb(242, 201, 76);
   background: url(/wp-content/uploads/2022/10/site-map.png), linear-gradient(80deg, rgb(242, 201, 76) 50%, rgb(242, 242, 242) 50%);
   background-position: 50vw, center;
@@ -1320,7 +1320,7 @@ BACKGROUND COLORS
   background-repeat: no-repeat;
 }
 @media (max-width: 768px) {
-  .part-one-site-map {
+  .ps-ifpr.order-5 {
     background: url(/wp-content/uploads/2022/10/site-map.png), linear-gradient(-4deg, rgb(242, 201, 76) 38%, rgb(242, 242, 242) 38%);
     background-position: center 38rem, center;
     background-size: 26rem, auto;
@@ -1385,8 +1385,7 @@ BACKGROUND COLORS
 
 .ps-ifpr.order-2,
 .ps-ifpr.order-10,
-.ps-ifpr.order-13,
-.ps-ifpr.order-5 {
+.ps-ifpr.order-13 {
   background: #F2C94C;
 }
 
