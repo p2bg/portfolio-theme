@@ -1335,9 +1335,9 @@ BACKGROUND COLORS
 .ps-ifpr.order-7,
 .ps-ifpr.order-14,
 .nespresso-page.order-3,
-.nespresso-page.order-10,
-.nespresso-page.order-13,
-.nespresso-page.order-7 {
+.nespresso-page.order-8,
+.nespresso-page.order-11,
+.nespresso-page.order-15 {
   background-color: #333;
   color: #e0e0e0;
 }
@@ -1346,64 +1346,71 @@ BACKGROUND COLORS
 .ps-ifpr.order-7 a,
 .ps-ifpr.order-14 a,
 .nespresso-page.order-3 a,
-.nespresso-page.order-10 a,
-.nespresso-page.order-13 a,
-.nespresso-page.order-7 a {
+.nespresso-page.order-8 a,
+.nespresso-page.order-11 a,
+.nespresso-page.order-15 a {
   color: #66CCFF;
 }
 
 /* WHITE BACKGROUND */
-.ps-ifpr.order-1,
+.order-1,
 .ps-ifpr.order-4,
 .ps-ifpr.order-8,
 .ps-ifpr.order-9,
 .ps-ifpr.order-12,
 .nespresso-page.order-1,
 .nespresso-page.order-4,
-.nespresso-page.order-11,
-.nespresso-page.order-14,
-.nespresso-page.order-8 {
+.nespresso-page.order-9,
+.nespresso-page.order-12,
+.nespresso-page.order-16 {
   background-color: #fff;
 }
 
 /* NESPRESSO RED BACKGROUND */
 .nespresso-page.order-2,
 .nespresso-page.order-5,
-.nespresso-page.order-9,
-.nespresso-page.order-12,
+.nespresso-page.order-7,
+.nespresso-page.order-10,
+.nespresso-page.order-13,
+.nespresso-page.order-14,
+.nespresso-page.order-17,
 .nespresso-page.order-6 {
   background-color: #F1B1B1;
 }
 
-.part-four {
+/* REDITEC GREEN BACKGROUND */
+.reditec.order-2 {
+  background-color: #81D5A4;
+}
+
+.ps-ifpr.order-2,
+.ps-ifpr.order-10,
+.ps-ifpr.order-13,
+.ps-ifpr.order-5 {
   background: #F2C94C;
 }
 
-.part-five {
+.ps-ifpr.order-11 {
   background: #333;
   background: linear-gradient(180deg, #333 25rem, #fff 25rem);
 }
-.part-five h2 {
+.ps-ifpr.order-11 h2 {
   color: #e0e0e0;
 }
-.part-five figure {
+.ps-ifpr.order-11 figure {
   padding: 0 2rem;
 }
-.part-five figure img {
+.ps-ifpr.order-11 figure img {
   box-shadow: var(--shadow-elevation-medium);
 }
-.part-five figure figcaption {
+.ps-ifpr.order-11 figure figcaption {
   display: block !important;
   text-align: left;
 }
 @media (max-width: 768px) {
-  .part-five {
+  .ps-ifpr.order-11 {
     background: linear-gradient(176deg, #333 20rem, #fff 20rem);
   }
-}
-
-.part-final {
-  background-color: #EBF3FF;
 }
 
 .small-title h2 {
