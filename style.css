@@ -1332,6 +1332,9 @@ BACKGROUND COLORS
 }
 
 /* DARK GREY BACKGROUND */
+.reditec.order-3,
+.reditec.order-6,
+.reditec.order-11,
 .ps-ifpr.order-3,
 .ps-ifpr.order-6,
 .ps-ifpr.order-7,
@@ -1343,6 +1346,9 @@ BACKGROUND COLORS
   background-color: #333;
   color: #e0e0e0;
 }
+.reditec.order-3 a,
+.reditec.order-6 a,
+.reditec.order-11 a,
 .ps-ifpr.order-3 a,
 .ps-ifpr.order-6 a,
 .ps-ifpr.order-7 a,
@@ -1355,6 +1361,10 @@ BACKGROUND COLORS
 }
 
 /* WHITE BACKGROUND */
+.reditec.order-4,
+.reditec.order-7,
+.reditec.order-8,
+.reditec.order-12,
 .order-1,
 .ps-ifpr.order-4,
 .ps-ifpr.order-8,
@@ -1381,7 +1391,10 @@ BACKGROUND COLORS
 }
 
 /* REDITEC GREEN BACKGROUND */
-.reditec.order-2 {
+.reditec.order-2,
+.reditec.order-9,
+.reditec.order-10,
+.reditec.order-5 {
   background-color: #81D5A4;
 }
 
