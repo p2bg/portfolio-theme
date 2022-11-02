@@ -1109,6 +1109,15 @@ blockquote p {
   margin: 0;
 }
 
+.mockup-screen {
+  background: url(/wp-content/uploads/2022/11/reditecsul-macbook.png) center top no-repeat;
+  background-size: contain;
+  padding: 1.5% 0 3rem 0;
+}
+.mockup-screen video {
+  width: 65% !important;
+}
+
 .no-title h2 {
   display: none;
 }
@@ -1506,6 +1515,17 @@ BACKGROUND COLORS
 .of-hidden {
   height: 25rem;
   overflow-y: hidden;
+}
+
+table thead {
+  background-color: #333;
+  color: #e0e0e0;
+}
+table thead th {
+  padding: 0.25rem 0;
+}
+table tbody td {
+  padding: 0.25rem;
 }
 
 .about {

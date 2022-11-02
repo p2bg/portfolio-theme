@@ -39,6 +39,15 @@
     }
 }
 
+.mockup-screen{
+background: url(/wp-content/uploads/2022/11/reditecsul-macbook.png) center top no-repeat;
+background-size: contain;
+padding: 1.5% 0 3rem 0;
+video{
+    width: 65% !important;
+}
+}
+
 .no-title {
     h2 {
         display: none;
@@ -434,4 +443,21 @@ BACKGROUND COLORS
 .of-hidden{
     height:25rem;
     overflow-y: hidden;
+}
+
+// TABELAS
+
+table{
+    thead{
+        background-color: $text-color;
+        color: $light-grey;
+        th{
+            padding: 0.25rem 0;
+        }
+    }
+    tbody{
+        td{
+            padding: 0.25rem;
+        }
+    }
 }
