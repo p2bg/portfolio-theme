@@ -461,3 +461,14 @@ table{
         }
     }
 }
+
+//BLOCKQUOTE
+.quote{
+    background: url(assets/imgs/quotes.svg) top left no-repeat, url(assets/imgs/quotes-right.svg) bottom right no-repeat;
+    background-size: 2rem;
+    padding: 2rem;
+    margin: 1rem auto 0 auto;
+    p{
+        margin: 0;
+    }
+}
