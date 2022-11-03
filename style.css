@@ -1110,7 +1110,7 @@ blockquote p {
 }
 
 .mockup-screen {
-  background: url(/wp-content/uploads/2022/11/reditecsul-macbook.png) center top no-repeat;
+  background: url(assets/imgs/reditecsul-macbook.png) center top no-repeat;
   background-size: contain;
   padding: 1.5% 0 3rem 0;
 }
