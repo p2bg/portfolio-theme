@@ -1122,6 +1122,10 @@ blockquote p {
   display: none;
 }
 
+.no-gap .chapter-content {
+  gap: 0;
+}
+
 .chapter-content {
   display: grid;
   grid-template-areas: "content";
@@ -1517,12 +1521,24 @@ BACKGROUND COLORS
   overflow-y: hidden;
 }
 
+.index-2 {
+  z-index: 2;
+}
+
+.align-center {
+  align-self: center;
+}
+
+.is-style-stripes {
+  border-bottom: 0 !important;
+}
+
 table thead {
   background-color: #333;
   color: #e0e0e0;
 }
 table thead th {
-  padding: 0.25rem 0;
+  padding: 0.25rem;
 }
 table tbody td {
   padding: 0.25rem;

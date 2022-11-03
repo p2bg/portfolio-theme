@@ -51,7 +51,7 @@ if ( ! function_exists( 'p2bg_theme_setup' ) ) {
 	 * Enqueue Styles.
 	 */
 
-    wp_enqueue_style( 'p2bg-theme-style', get_template_directory_uri() . '/style.css', array(), 1.21 );
+    wp_enqueue_style( 'p2bg-theme-style', get_template_directory_uri() . '/style.css', array(), 1.22 );
     wp_enqueue_script( 'p2bg-theme-style', get_template_directory_uri() . '/assets/js/scripts.js', array(), wp_get_theme()->get( 'Version' ), true );
 
 	register_nav_menus(

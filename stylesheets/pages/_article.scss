@@ -54,6 +54,14 @@ video{
     }
 }
 
+.no-gap{
+    .chapter{
+        &-content{
+            gap: 0;
+        }
+    }
+}
+
 .chapter {
     &-content {
         display: grid;
@@ -445,14 +453,26 @@ BACKGROUND COLORS
     overflow-y: hidden;
 }
 
+.index-2{
+    z-index: 2;
+}
+
+.align-center{
+    align-self: center;
+}
+
 // TABELAS
+
+.is-style-stripes{
+    border-bottom: 0 !important;
+}
 
 table{
     thead{
         background-color: $text-color;
         color: $light-grey;
         th{
-            padding: 0.25rem 0;
+            padding: 0.25rem;
         }
     }
     tbody{
