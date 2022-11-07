@@ -361,7 +361,7 @@ html {
 html,
 body {
   box-sizing: border-box;
-  background-color: #333;
+  background-color: #273132;
 }
 
 body.wp-admin,
@@ -437,7 +437,7 @@ ul {
  * Basic typography style for copy text
  */
 body {
-  color: #333;
+  color: #273132;
   font: normal 100%/1.5 "Roboto Condensed", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
@@ -448,7 +448,7 @@ body {
 }
 .site-description a,
 .primary-navigation a {
-  color: #333;
+  color: #273132;
 }
 @media (max-width: 768px) {
   .site-description a,
@@ -712,7 +712,7 @@ blockquote p {
   margin: 0;
   padding: 0.25rem 0.25rem 0.25rem 2rem;
   text-decoration: none;
-  color: #333;
+  color: #273132;
   font-weight: normal;
 }
 .primary-navigation .menu-wrapper .menu-item-has-children .sub-menu li:first-of-type a {
@@ -759,7 +759,7 @@ blockquote p {
 .primary-navigation button svg .cls-2,
 .primary-navigation button svg .cls-3 {
     transition: 0.2s ease;
-    fill: #333;
+    fill: #273132;
   }
   .primary-navigation button svg .cls-2 {
     transform-origin: 2px 22px;
@@ -769,7 +769,7 @@ blockquote p {
   }
   .primary-navigation .menu-wrapper {
     align-items: flex-end;
-    background-color: #333;
+    background-color: #273132;
     box-shadow: var(--shadow-elevation-medium);
     border-radius: 0 0 0.25rem 0.25rem;
     flex-direction: column;
@@ -835,7 +835,7 @@ blockquote p {
   }
 }
 .site-footer .footer-links a {
-  color: #333;
+  color: #273132;
   display: block;
   padding-left: 1.5rem;
 }
@@ -1072,7 +1072,7 @@ blockquote p {
 
 .page .article-head {
   align-items: center;
-  background-color: #333;
+  background-color: #273132;
   color: #e0e0e0;
   display: flex;
   flex-direction: column;
@@ -1354,7 +1354,7 @@ BACKGROUND COLORS
 .nespresso-page.order-8,
 .nespresso-page.order-11,
 .nespresso-page.order-15 {
-  background-color: #333;
+  background-color: #273132;
   color: #e0e0e0;
 }
 .reditec.order-3 a,
@@ -1416,8 +1416,8 @@ BACKGROUND COLORS
 }
 
 .ps-ifpr.order-11 {
-  background: #333;
-  background: linear-gradient(180deg, #333 25rem, #fff 25rem);
+  background: #273132;
+  background: linear-gradient(180deg, #273132 25rem, #fff 25rem);
 }
 .ps-ifpr.order-11 h2 {
   color: #e0e0e0;
@@ -1434,7 +1434,7 @@ BACKGROUND COLORS
 }
 @media (max-width: 768px) {
   .ps-ifpr.order-11 {
-    background: linear-gradient(176deg, #333 20rem, #fff 20rem);
+    background: linear-gradient(176deg, #273132 20rem, #fff 20rem);
   }
 }
 
@@ -1532,7 +1532,7 @@ BACKGROUND COLORS
 }
 
 table thead {
-  background-color: #333;
+  background-color: #273132;
   color: #e0e0e0;
 }
 table thead th {
