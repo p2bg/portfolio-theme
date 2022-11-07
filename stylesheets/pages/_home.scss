@@ -16,26 +16,24 @@
     }
 
     background-size: 4rem,
-    auto,
-    32rem;
+    auto;
 }
 
 &.bk-2 {
     background-image: url(assets/imgs/dog.svg), $bkg-gradient;
-    background-position: calc(80vw - 12rem) bottom, 0;
+    background-position: calc(80vw - 12rem) calc(100% + 1px), 0;
 
     @media (max-width: map-get($breakpoints, medium)) {
         background-position: calc(100vw - 12rem) bottom, 0;
     }
 
     background-size: 12rem,
-    auto,
-    32rem;
+    auto;
 }
 
 &.bk-3 {
     background-image: url(assets/imgs/park.svg), $bkg-gradient;
-    background-size: 13rem, auto, 32rem;
+    background-size: 13rem, auto;
     background-position: calc(80vw - 15rem) bottom, 0;
 
     @media (max-width: map-get($breakpoints, medium)) {
@@ -44,16 +42,13 @@
 }
 
 &.bk-4 {
-    background-image: url(assets/imgs/cat.svg), $bkg-gradient;
-    background-position: calc(80vw - 8rem) bottom, 0;
+    background-image: url(assets/imgs/boy-ball.svg), $bkg-gradient;
+    background-size: 10rem, auto;
+    background-position: calc(80vw - 15rem) calc(100% + 1px), 0;
 
     @media (max-width: map-get($breakpoints, medium)) {
         background-position: calc(100vw - 8rem) bottom, 0;
     }
-
-    background-size: 4rem,
-    auto,
-    32rem;
 }
 }
 
